@@ -1,0 +1,29 @@
+.header {
+  box-shadow: 0px -2px 18px rgba(128, 128, 128, 0.1);
+  .header-wrapper {
+    height: rem(70px);
+    margin: 0 rem(82px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdfdfd;
+    @include breakpoint(mobile) {
+      margin: 0 rem(24px);
+    }
+
+    .account-details {
+      display: flex;
+      p:first-of-type {
+        color: #2b2b2b;
+        margin-right: rem(40px);
+      }
+      .signout {
+        cursor: pointer;
+        p {
+          color: #ec4466;
+          margin-left: rem(8px);
+        }
+      }
+    }
+  }
+}
